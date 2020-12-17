@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>selecao_agente</title>
 
+  <link rel="stylesheet" href="../css/estilo.css">
+
+  <script src="../js/selecao_agente.js"></script>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -21,17 +25,17 @@
 
 </head>
 
-<body>
+<body onload="validaUsuario()">
   <div class="container">
     <div class="row">
       <div class="media">
-        <img src="../imagens/foto01.png" class="mr-3" alt="...">
+        <div id="fotoUser"></div>
         <div class="media-body">
-          <h5 class="mt-0">retorno nome do usuario</h5>
+          <h5 class="mt-0" id="dadosUser"></h5>
           <br>
           <br>
           <br>
-          <button type="button" class="btn btn-primary btn-sm">LOGOUT</button>
+          <button type="button" class="btn btn-primary btn-sm" onclick="logout()">LOGOUT</button>
         </div>
       </div>
 
@@ -41,17 +45,8 @@
     <br>
 
     <div class="row">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <button class="dropdown-item" type="button">Action</button>
-          <button class="dropdown-item" type="button">Another action</button>
-          <button class="dropdown-item" type="button">Something else here</button>
-        </div>
-      </div>
+      <select id="selUser"></select>
+
 
     </div>
     <br>
@@ -62,31 +57,61 @@
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Parceiro</th>
+            <th scope="col">Volume Transacional</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
             <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+
           </tr>
           <tr>
             <th scope="row">3</th>
             <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+
           </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Larry</td>
+
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Larry</td>
+
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Larry</td>
+
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Larry</td>
+
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Larry</td>
+
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Larry</td>
+
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Larry</td>
+
+          </tr>
+
         </tbody>
       </table>
 
